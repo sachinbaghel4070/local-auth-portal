@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-blogger'></i><span>Blogger</span></a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="main">
+            <a href="index.html" class="user active"><i class='bx bxs-user-circle'></i>&nbsp;Sign In</a>
+            <a href="../register/index.html"> Register</a>
+            <a href="../data(Record)/index.html" ><i class='bx bxs-data'></i></a>
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="image-side"></div>
+        <div class="login-side">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" placeholder="E-mail Address" id="email" required>
+                    <input type="password" placeholder="Password" id="password" required>
+                    <a href="../changePassword/index.html" class="link">Change Password?</a>
+                    <div class="button-group">
+                        <button type="button" onclick="saveData()" id="save-btn">Login</button>
+                        <button type="reset" class="btn btn-warning" onclick="clearFields()">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="sign-in.js"></script>
+</body>
+</html>

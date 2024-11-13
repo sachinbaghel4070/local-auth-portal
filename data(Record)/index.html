@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Records</h1>
+        <a href="../register/index.html">Register New User</a>
+    </header>
+    <div class="login-container" id="login-container">
+        <h2>Admin Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+    </div>
+    <div id="notification" class="notification"></div>    
+    <div class="container" id="records-container" style="display: none;">
+        <h1>User Records</h1>
+        <input type="text" id="search" placeholder="Search by username or email" onkeyup="searchRecords()">
+        <table id="records-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be inserted here -->
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="logout()">Logout</button>
+            <button type="button" onclick="deleteAllRecords()">Delete All Records</button>
+        </div>
+    </div>    
+    <script src="view-records.js"></script>
+</body>
+</html>
