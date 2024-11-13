@@ -13,7 +13,8 @@ function saveData(){
         })[0]
         localStorage.setItem("username",current_records.username);
         localStorage.setItem("email",current_records.email);
-        window.location.href="../dashboard/index.html";
+        window.location.href="dashboard/index.html";
+        
 
     }
     else{
